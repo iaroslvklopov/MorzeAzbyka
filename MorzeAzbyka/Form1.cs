@@ -6,12 +6,10 @@ namespace MorzeAzbyka
         {
             InitializeComponent();
         }
-        string enter;
-        string v;
         private void button1_Click(object sender, EventArgs e)
         {
             textBox2.Clear();
-            enter = textBox1.Text;
+            string enter = textBox1.Text;
             string[] vyvod = new string[enter.Length];
             char[] alfavit = { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z' };
             string[] alfavitmorze = { "*-", "-***", "-*-*", "-**", "*", "**-*", "--*", "****", "**", "*---", "-*-", "*-**", "--", "-*", "---", "*--*", "--*-", "*-*", "***", "-", "**-", "***-", "*--", "-**-", "-*--", "--**" };
@@ -34,7 +32,7 @@ namespace MorzeAzbyka
         private void button2_Click(object sender, EventArgs e)
         {
             textBox2.Clear();
-            enter = textBox1.Text;
+            string enter = textBox1.Text;
             string[] enterarray = enter.Split(' ');
             string[] vyvod = new string[enter.Length];
             char[] alfavit = { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z' };
